@@ -1,5 +1,3 @@
-/* ROBOT.GIF from Giphy - https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY */
-
 html {
   box-sizing: border-box;
 }
@@ -18,6 +16,46 @@ body {
   align-items: center;
   background: url('./pig.gif');
   background-size: contain;
-  background-position: left center;
+  background-position: right center;
   background-repeat: no-repeat;
+}
+
+button{
+  cursor: pointer;
+  outline: none;
+  width: 200px;
+  height: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(110, 53, 32);
+  background: peachpuff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover{
+  filter: brightness(95%);
+}
+
+button:active{
+  transform: scale(0.98);
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:disabled{
+  cursor: not-allowed;
+  filter: brightness(30%);
+}
+
+/* Media Query: Table or smaller */
+@media screen and (max-width: 1000px) {
+  .container {
+    background-size: cover;
+    background-position: center center;
+  }
+  button {
+    box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5);
+  }
 }
